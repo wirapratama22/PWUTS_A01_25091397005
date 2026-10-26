@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CopyKuy - Dashboard Antrean</title>
+  <link rel="icon" href="assets/img/logo.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="wrap nav-in">
+      <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="30" height="30">CopyKuy</a>
+      <button id="burger" aria-label="Buka menu" aria-expanded="false">&#9776;</button>
+      <nav id="menu">
+        <a class="nav-ajax active" href="views/interaktif.html">Antrean</a>
+        <a class="nav-ajax" href="views/transaksi.html">Pembayaran</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Antrean fotokopi hari ini</h1>
+      <p>Pantau pesanan dari menunggu sampai selesai, lalu catat pembayaran tunai di kasir.</p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </section>
+
+  <main id="main-content" class="wrap"></main>
+
+  <footer><div class="wrap">&copy; 2026 CopyKuy &middot; UTS Pemrograman Web &middot; Muhammad Wira Pratama (25091397005)</div></footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

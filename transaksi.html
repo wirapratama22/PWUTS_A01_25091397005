@@ -1,0 +1,28 @@
+<section class="card narrow">
+  <h2>Pembayaran tunai</h2>
+  <p class="muted">Masukkan ID pesanan, tagihan terisi otomatis. Pesanan belum lunas: <span id="belum-lunas"></span></p>
+  <form id="form-transaksi" method="post" action="proses_pembayaran.php" novalidate>
+    <input type="hidden" name="metode" value="tunai">
+    <label for="id-pesanan">ID pesanan</label>
+    <input id="id-pesanan" name="id_pesanan" list="daftar-id" placeholder="contoh: CK-001" autocomplete="off">
+    <datalist id="daftar-id"></datalist>
+    <small class="err" data-for="id-pesanan"></small>
+
+    <label for="tanggal-bayar">Tanggal bayar</label>
+    <input id="tanggal-bayar" name="tanggal_bayar" type="date">
+    <small class="err" data-for="tanggal-bayar"></small>
+
+    <label for="tagihan">Tagihan</label>
+    <input id="tagihan" name="tagihan" readonly placeholder="Terisi otomatis">
+
+    <label for="uang">Uang diterima (Rp)</label>
+    <input id="uang" name="jumlah_bayar" type="number" inputmode="numeric" min="0" placeholder="0">
+    <small class="err" data-for="uang"></small>
+
+    <label for="kembalian">Kembalian</label>
+    <input id="kembalian" name="kembalian" readonly placeholder="Rp0">
+
+    <button class="btn" type="submit">Simpan pembayaran</button>
+  </form>
+  <div id="hasil" class="ok" hidden></div>
+</section>
